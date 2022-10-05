@@ -1,0 +1,15 @@
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\bin\Debug\net6.0\Csharp_Interfaces.exe
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\bin\Debug\net6.0\Csharp_Interfaces.deps.json
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\bin\Debug\net6.0\Csharp_Interfaces.runtimeconfig.json
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\bin\Debug\net6.0\Csharp_Interfaces.dll
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\bin\Debug\net6.0\Csharp_Interfaces.pdb
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.csproj.AssemblyReference.cache
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.AssemblyInfoInputs.cache
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.AssemblyInfo.cs
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.dll
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\refint\Csharp_Interfaces.dll
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.pdb
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\Csharp_Interfaces.genruntimeconfig.cache
+C:\Users\mtjoh\OneDrive\Dokument\GitHub\Csharp_Interfaces\obj\Debug\net6.0\ref\Csharp_Interfaces.dll
