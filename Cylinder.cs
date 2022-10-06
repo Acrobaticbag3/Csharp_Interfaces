@@ -4,7 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Csharp_Interfaces {
-    public class Cylinder {
-        
+    public class Cylinder : Ishape {
+        public void Circumferance(){
+
+        }
+        public void Area(){
+
+        }
     }
 }
