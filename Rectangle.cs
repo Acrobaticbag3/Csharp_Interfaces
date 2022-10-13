@@ -7,10 +7,22 @@ namespace Csharp_Interfaces {
     public class Rectangle {
         private int width;
         private int height;
-        public void Circumferance(){
+
+        public Rectangle() {
+            
+        }
+
+        public void circumference(){
 
         }
         public void Area(){
+
+        }
+
+        public void Input_Data() {
+
+        }
+        public void Print_Data() {
 
         }
     }

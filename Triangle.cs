@@ -7,10 +7,22 @@ namespace Csharp_Interfaces {
     public class Triangle {
         private int width;
         private int height;
-        public void Circumferance(){
+        
+        public Triangle() {
+
+        }
+
+        public void circumference(){
 
         }
         public void Area(){
+
+        }
+
+        public void Input_Data() {
+
+        }
+        public void Print_Data() {
 
         }
     }

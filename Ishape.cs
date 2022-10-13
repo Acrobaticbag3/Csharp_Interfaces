@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Csharp_Interfaces {
     public interface Ishape {
-        void Circumferance();
+        void circumference();
         void Area();
     }
 }
