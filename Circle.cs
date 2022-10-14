@@ -6,27 +6,50 @@ using System.Threading.Tasks;
 namespace Csharp_Interfaces {
     public class Circle : Ishape {
         private int radius;
-        private int diameter;
+        private string spacing = "==================";
+
         public Circle() {
 
         }
 
-        public void circumference() {
-
+        public void Circumference() {
+            double circumferance = 2 * radius * 3.14;
+            Console.WriteLine("the circumferance of this rectangle is: " + circumferance);
         }
         public void Area() {
-
+            double area = 3.14 * radius * radius;
+            Console.WriteLine("the circumferance of this rectangle is: " + area);
         }
 
-        public void Input_Data() {
-            Console.WriteLine(value: "Input radius: ");
-            radius = int.Parse(s: Console.ReadLine());
-            
-            Console.WriteLine(value: "Input diameter: ");
-            diameter = int.Parse(s: Console.ReadLine());
+        public void InputData() {
+            Console.WriteLine("Input radius: ");
+            radius = int.Parse(Console.ReadLine());
         }
-        public void Print_Data() {
+        public void InputAndPrintData() {
+            InputData();
 
+            Console.Write("what do you wish to calculate with this data? Area Circumference or Both\n Input: ");
+            string Answer = Console.ReadLine();
+            switch(Answer) {
+            case "circumference":
+                Console.WriteLine(spacing);
+                Circumference();
+                Console.WriteLine(spacing);
+                break;
+
+            case "Area":
+                Console.WriteLine(spacing);
+                Area();
+                Console.WriteLine(spacing);
+                break;
+
+            case "Both":
+                Console.WriteLine(spacing);
+                Circumference();
+                Area();
+                Console.WriteLine(spacing);
+                break;
+            }
         }
     }
 }

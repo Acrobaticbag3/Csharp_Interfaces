@@ -5,25 +5,51 @@ using System.Threading.Tasks;
 
 namespace Csharp_Interfaces {
     public class Sphere {
-        private int width;
-        private int height;
+        private int radius;
+        private string spacing = "==================";
 
         public Sphere() {
 
         }
 
-        public void circumference(){
-
+        public void Circumference() {
+            double circumferance = radius * 3.14;
+            Console.WriteLine("the circumferance of this triangle is: " + circumferance);
         }
-        public void Area(){
-
+        public void Area() {
+            double area = 4 * 3.14 * radius * radius;
+            Console.WriteLine("the circumferance of this triangle is: " + area);
         }
 
-        public void Input_Data() {
-
+        public void InputData() {
+            Console.WriteLine("Input radius: ");
+            radius = int.Parse(Console.ReadLine());
         }
-        public void Print_Data() {
+        public void InputAndPrintData() {
+            InputData();
 
+            Console.Write("what do you wish to calculate with this data? Area Circumference or Both\n Input: ");
+            string Answer = Console.ReadLine();
+            switch(Answer) {
+            case "circumference":
+                Console.WriteLine(spacing);
+                Circumference();
+                Console.WriteLine(spacing);
+                break;
+
+            case "Area":
+                Console.WriteLine(spacing);
+                Area();
+                Console.WriteLine(spacing);
+                break;
+
+            case "Both":
+                Console.WriteLine(spacing);
+                Circumference();
+                Area();
+                Console.WriteLine(spacing);
+                break;
+            }
         }
     }
 }
