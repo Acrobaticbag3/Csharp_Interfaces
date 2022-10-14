@@ -5,27 +5,30 @@ using System.Threading.Tasks;
 
 namespace Csharp_Interfaces {
     public class Circle : Ishape {
+        // variables list
         private int radius;
         private string spacing = "==================";
 
-        public Circle() {
+        public Circle() { // A default constructor 
 
         }
 
-        public void Circumference() {
+        // === === Calculations === === \\
+        public void Circumference() { 
             double circumferance = 2 * radius * 3.14;
             Console.WriteLine("the circumferance of this rectangle is: " + circumferance);
         }
-        public void Area() {
+        public void Area() { 
             double area = 3.14 * radius * radius;
             Console.WriteLine("the circumferance of this rectangle is: " + area);
         }
 
-        public void InputData() {
+        // === === Stores and declares variabels === === \\
+        public void InputData() { 
             Console.WriteLine("Input radius: ");
             radius = int.Parse(Console.ReadLine());
         }
-        public void InputAndPrintData() {
+        public void InputAndPrintData() { 
             InputData();
 
             Console.Write("what do you wish to calculate with this data? Area Circumference or Both\n Input: ");
@@ -47,6 +50,12 @@ namespace Csharp_Interfaces {
                 Console.WriteLine(spacing);
                 Circumference();
                 Area();
+                Console.WriteLine(spacing);
+                break;
+            
+            default :
+                Console.WriteLine(spacing);
+                Console.WriteLine("Error, not a viable calulation.");
                 Console.WriteLine(spacing);
                 break;
             }

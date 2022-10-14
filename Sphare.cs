@@ -5,13 +5,15 @@ using System.Threading.Tasks;
 
 namespace Csharp_Interfaces {
     public class Sphere {
+        //Variabels list
         private int radius;
         private string spacing = "==================";
 
-        public Sphere() {
+        public Sphere() { // A default constructor 
 
         }
 
+        // === === Calculations === === \\
         public void Circumference() {
             double circumferance = radius * 3.14;
             Console.WriteLine("the circumferance of this triangle is: " + circumferance);
@@ -21,6 +23,7 @@ namespace Csharp_Interfaces {
             Console.WriteLine("the circumferance of this triangle is: " + area);
         }
 
+        // === === Stores and declares variabels === === \\
         public void InputData() {
             Console.WriteLine("Input radius: ");
             radius = int.Parse(Console.ReadLine());
@@ -47,6 +50,12 @@ namespace Csharp_Interfaces {
                 Console.WriteLine(spacing);
                 Circumference();
                 Area();
+                Console.WriteLine(spacing);
+                break;
+
+            default :
+                Console.WriteLine(spacing);
+                Console.WriteLine("Error, not a viable calulation.");
                 Console.WriteLine(spacing);
                 break;
             }

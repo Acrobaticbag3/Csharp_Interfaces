@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Csharp_Interfaces {
     public class Triangle {
+        //Variabels list
         private int width;
         private int height;
         private string spacing = "==================";
         
-        public Triangle() {
+        public Triangle() { // A default constructor 
 
         }
 
+        // === === Calculations === === \\
         public void Circumference() {
             int circumferance = width * 2 + height * 2;
             Console.WriteLine("the circumferance of this triangle is: " + circumferance);
@@ -22,6 +25,7 @@ namespace Csharp_Interfaces {
             Console.WriteLine("The area of this triangle is: " + area);
         }
 
+        // === === Stores and declares variabels === === \\
         public void InputData() {
             Console.Write("Input width: ");
             width = int.Parse(Console.ReadLine());
