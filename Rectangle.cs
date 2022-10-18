@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Csharp_Interfaces {
-    public class Rectangle {
-        //Variabels list
+    public class Rectangle : Ishape{
+        //Variables list
         private int width;
         private int height;
         private string spacing = "==================";
@@ -16,53 +16,25 @@ namespace Csharp_Interfaces {
 
         // === === Calculations === === \\
         public void Circumference(){
-            int circumferance = width * 2 + height * 2;
-            Console.WriteLine("the circumferance of this rectangle is: " + circumferance);
+            InputData();
+            int circumference = width * 2 + height * 2;
+            Console.WriteLine("the circumference of this rectangle is: " + circumference);
+            Console.WriteLine(spacing);
         }
         public void Area(){
+            InputData();
             int area = width * height;
             Console.WriteLine("The area of this rectangle is: " + area);
+            Console.WriteLine(spacing);
         }
-
-        // === === Stores and declares variabels === === \\
         public void InputData() {
-            Console.WriteLine("Input width: ");
+            Console.WriteLine(spacing);
+            Console.Write("Input width: ");
             width = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Input height: ");
+            Console.Write("Input height: ");
             height = int.Parse(Console.ReadLine());
-        }
-        public void InputAndPrintData() {
-            InputData();
-
-            Console.Write("what do you wish to calculate with this data? Area Circumference or Both\n Input: ");
-            string Answer = Console.ReadLine();
-            switch(Answer) {
-            case "circumference":
-                Console.WriteLine(spacing);
-                Circumference();
-                Console.WriteLine(spacing);
-                break;
-
-            case "Area":
-                Console.WriteLine(spacing);
-                Area();
-                Console.WriteLine(spacing);
-                break;
-
-            case "Both":
-                Console.WriteLine(spacing);
-                Circumference();
-                Area();
-                Console.WriteLine(spacing);
-                break;
-
-            default :
-                Console.WriteLine(spacing);
-                Console.WriteLine("Error, not a viable calulation.");
-                Console.WriteLine(spacing);
-                break;
-            }
+            Console.WriteLine(spacing);
         }
     }
 }

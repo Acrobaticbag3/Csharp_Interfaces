@@ -7,6 +7,5 @@ namespace Csharp_Interfaces {
     public interface Ishape {
         void Circumference();
         void Area();
-        void InputAndPrintData();
     }
 }

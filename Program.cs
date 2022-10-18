@@ -1,126 +1,171 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
+
 namespace Csharp_Interfaces {
     internal class Program {
         static void Main(string[] args) {
-            //Variabels list
-            string spacing = "==================";
-            string answerTwo;
-            int loop = 1;
-            int loopTwo = 1;
+            string mainQuestion = "Calculate circumference, Area or Both?";
+            string mainAnswer;
 
-            while(loop != 0) { //Continues to as the question as long as loop != 0
-                Console.WriteLine("Witch shape would you like to use? Circle, Cylinder, Rectangle, Sphare, Triangle \nInput: ");
-                string answer = Console.ReadLine();
-                switch(answer) {
-                case "Circle": //Get and show data for the Circle
-                    Console.WriteLine(spacing);
-                    Circle circle = new Circle();
-                    circle.InputAndPrintData();
-                    Console.ReadKey();
+            List<Ishape> shapes = new List<Ishape>();
+            shapes.Add(new Circle());
+            shapes.Add(new Cylinder());
+            shapes.Add(new Rectangle());
+            shapes.Add(new Sphere());
+            shapes.Add(new Triangle());
 
-                    Console.WriteLine("Continue? y/n");
-                    answerTwo = Console.ReadLine();
-                    while(loopTwo != 0) {
-                        if(answerTwo == "y") {
-                            loopTwo--;
-                        } else if(answerTwo == "n") {
-                            loop--; //sets loop to 0, which ends the loop
-                            loopTwo--;
-                        } else {
-                            //Does nothing so that the question can repeat.
+            Console.Write("Choose which shape to edit: "); 
+            string answerTwo = Console.ReadLine();
+            switch (answerTwo) {
+            case "Triangle" :
+                foreach (Ishape shape in shapes) {
+                    if(shape is Triangle) {
+                        Console.WriteLine(mainQuestion);
+                        mainAnswer = Console.ReadLine();
+
+                        switch (mainAnswer) {
+                            case "Circumference" :
+                                shape.Circumference();
+                                break;
+
+                            case "Area" :
+                                shape.Area();
+                                break;
+
+                            case "Both" :
+                                shape.Circumference();
+                                shape.Area();
+                                break;
+
+                            default :
+                                Console.Write("Err: N/A");
+                                break;
                         }
                     }
-                    break;
-
-                case "Cylinder": //Get and show data for the Cylinder
-                    Console.WriteLine(spacing);
-                    Cylinder cylinder = new Cylinder();
-                    cylinder.InputAndPrintData();
                     Console.ReadKey();
-                    
-                    Console.WriteLine("Continue? y/n");
-                    answerTwo = Console.ReadLine();
-                    while(loopTwo != 0) {
-                        if(answerTwo == "y") {
-                            loopTwo--;
-                        } else if(answerTwo == "n") {
-                            loop--; //sets loop to 0, which ends the loop
-                            loopTwo--;
-                        } else {
-                            //Does nothing so that the question can repeat.
+                }
+                break;
+
+            case "Sphere" :
+                foreach (Ishape shape in shapes) {
+                    if(shape is Sphere) {
+                        Console.WriteLine(mainQuestion);
+                        mainAnswer = Console.ReadLine();
+
+                        switch (mainAnswer) {
+                            case "Circumference" :
+                                shape.Circumference();
+                                break;
+
+                            case "Area" :
+                                shape.Area();
+                                break;
+
+                            case "Both" :
+                                shape.Circumference();
+                                shape.Area();
+                                break;
+
+                            default :
+                                Console.Write("Err: N/A");
+                                break;
                         }
                     }
-                    break;
-
-                case "Rectangle": //Get and show data for the Rectangle
-                    Console.WriteLine(spacing);
-                    Rectangle rectangle = new Rectangle();
-                    rectangle.InputAndPrintData();
                     Console.ReadKey();
-                    
-                    Console.WriteLine("Continue? y/n");
-                    answerTwo = Console.ReadLine();
-                    while(loopTwo != 0) {
-                        if(answerTwo == "y") {
-                            loopTwo--;
-                        } else if(answerTwo == "n") {
-                            loop--; //sets loop to 0, which ends the loop
-                            loopTwo--;
-                        } else {
-                            //Does nothing so that the question can repeat.
+                }
+                break;
+
+            case "Rectangle" :
+                foreach (Ishape shape in shapes) {
+                    if(shape is Rectangle) {
+                        Console.WriteLine(mainQuestion);
+                        mainAnswer = Console.ReadLine();
+
+                        switch (mainAnswer) {
+                            case "Circumference" :
+                                shape.Circumference();
+                                break;
+
+                            case "Area" :
+                                shape.Area();
+                                break;
+
+                            case "Both" :
+                                shape.Circumference();
+                                shape.Area();
+                                break;
+
+                            default :
+                                Console.Write("Err: N/A");
+                                break;
                         }
                     }
-                    break;
-
-                case "Sphere": //Get and show data for the Sphere
-                    Console.WriteLine(spacing);
-                    Sphere sphare = new Sphere();
-                    sphare.InputAndPrintData();
                     Console.ReadKey();
-                    
-                    Console.WriteLine("Continue? y/n");
-                    answerTwo = Console.ReadLine();
-                    while(loopTwo != 0) {
-                        if(answerTwo == "y") {
-                            loopTwo--;
-                        } else if(answerTwo == "n") {
-                            loop--; //sets loop to 0, which ends the loop
-                            loopTwo--;
-                        } else {
-                            //Does nothing so that the question can repeat.
+                }
+                break;
+
+            case "Cylinder" :
+                foreach (Ishape shape in shapes) {
+                    if(shape is Cylinder) {
+                        Console.WriteLine(mainQuestion);
+                        mainAnswer = Console.ReadLine();
+
+                        switch (mainAnswer) {
+                            case "Circumference" :
+                                shape.Circumference();
+                                break;
+
+                            case "Area" :
+                                shape.Area();
+                                break;
+
+                            case "Both" :
+                                shape.Circumference();
+                                shape.Area();
+                                break;
+
+                            default :
+                                Console.Write("Err: N/A");
+                                break;
                         }
                     }
-                    break;
-
-                case "Triangle": //Get and show data for the Triangle
-                    Console.WriteLine(spacing);
-                    Triangle triangle = new Triangle();
-                    triangle.InputAndPrintData();
                     Console.ReadKey();
-                    
-                    Console.WriteLine("Continue? y/n");
-                    answerTwo = Console.ReadLine();
-                    while(loopTwo != 0) {
-                        if(answerTwo == "y") {
-                            loopTwo--;
-                        } else if(answerTwo == "n") {
-                            loop--; //sets loop to 0, which ends the loop
-                            loopTwo--;
-                        } else {
-                            //Does nothing so that the question can repeat.
+                }
+                break;
+
+            case "Circle" :
+                foreach (Ishape shape in shapes) {
+                    if(shape is Circle) {
+                        Console.WriteLine(mainQuestion);
+                        mainAnswer = Console.ReadLine();
+
+                        switch (mainAnswer) {
+                            case "Circumference" :
+                                shape.Circumference();
+                                break;
+
+                            case "Area" :
+                                shape.Area();
+                                break;
+
+                            case "Both" :
+                                shape.Circumference();
+                                shape.Area();
+                                break;
+
+                            default :
+                                Console.Write("Err: N/A");
+                                break;
                         }
                     }
-                    break;
-
-                default :
-                    Console.WriteLine(spacing);
-                    Console.WriteLine("Error, not a viable shape.");
-                    Console.WriteLine(spacing);
                     Console.ReadKey();
-                    break;
-                }      
+                }
+                break;
+
+            default :
+                Console.WriteLine("Not a viable shape.");
+                break;
             }
         }
     }
