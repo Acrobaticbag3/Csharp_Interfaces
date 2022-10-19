@@ -27,7 +27,7 @@ namespace Csharp_Interfaces {
             Console.WriteLine("the area of this cylinder is: " + area);
             Console.WriteLine(spacing);
         }
-        public void InputData() {
+        private void InputData() {
             Console.WriteLine(spacing);
             Console.Write("Input height: ");
             height = int.Parse(Console.ReadLine());

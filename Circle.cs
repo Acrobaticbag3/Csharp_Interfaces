@@ -26,7 +26,7 @@ namespace Csharp_Interfaces {
             Console.WriteLine("the Area of this circle is: " + area);
             Console.WriteLine(spacing);
         }
-        public void InputData() {
+        private void InputData() {
             Console.WriteLine(spacing);
             Console.Write("Input radius: ");
             radius = int.Parse(Console.ReadLine());

@@ -27,7 +27,7 @@ namespace Csharp_Interfaces {
             Console.WriteLine("The area of this rectangle is: " + area);
             Console.WriteLine(spacing);
         }
-        public void InputData() {
+        private void InputData() {
             Console.WriteLine(spacing);
             Console.Write("Input width: ");
             width = int.Parse(Console.ReadLine());
