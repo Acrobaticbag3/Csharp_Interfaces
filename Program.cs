@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-
 namespace Csharp_Interfaces {
     internal class Program {
         static void Main(string[] args) {
@@ -9,19 +8,19 @@ namespace Csharp_Interfaces {
             string mainAnswer;
 
             List<Ishape> shapes = new List<Ishape>();
-            shapes.Add(new Circle());
-            shapes.Add(new Cylinder());
-            shapes.Add(new Rectangle());
-            shapes.Add(new Sphere());
-            shapes.Add(new Triangle());
+            shapes.Add(item: new Circle());
+            shapes.Add(item: new Cylinder());
+            shapes.Add(item: new Rectangle());
+            shapes.Add(item: new Sphere());
+            shapes.Add(item: new Triangle());
 
-            Console.Write("Choose which shape to edit: "); 
+            Console.Write(value: "Choose which shape to edit: "); 
             string answerTwo = Console.ReadLine();
             switch (answerTwo) {
             case "Triangle" :
                 foreach (Ishape shape in shapes) {
                     if(shape is Triangle) {
-                        Console.WriteLine(mainQuestion);
+                        Console.WriteLine(value: mainQuestion);
                         mainAnswer = Console.ReadLine();
 
                         switch (mainAnswer) {
@@ -39,7 +38,7 @@ namespace Csharp_Interfaces {
                                 break;
 
                             default :
-                                Console.Write("Err: N/A");
+                                Console.Write(value: "Err: N/A");
                                 break;
                         }
                     }
@@ -50,7 +49,7 @@ namespace Csharp_Interfaces {
             case "Sphere" :
                 foreach (Ishape shape in shapes) {
                     if(shape is Sphere) {
-                        Console.WriteLine(mainQuestion);
+                        Console.WriteLine(value: mainQuestion);
                         mainAnswer = Console.ReadLine();
 
                         switch (mainAnswer) {
@@ -68,7 +67,7 @@ namespace Csharp_Interfaces {
                                 break;
 
                             default :
-                                Console.Write("Err: N/A");
+                                Console.Write(value: "Err: N/A");
                                 break;
                         }
                     }
@@ -79,7 +78,7 @@ namespace Csharp_Interfaces {
             case "Rectangle" :
                 foreach (Ishape shape in shapes) {
                     if(shape is Rectangle) {
-                        Console.WriteLine(mainQuestion);
+                        Console.WriteLine(value: mainQuestion);
                         mainAnswer = Console.ReadLine();
 
                         switch (mainAnswer) {
@@ -97,7 +96,7 @@ namespace Csharp_Interfaces {
                                 break;
 
                             default :
-                                Console.Write("Err: N/A");
+                                Console.Write(value: "Err: N/A");
                                 break;
                         }
                     }
@@ -108,7 +107,7 @@ namespace Csharp_Interfaces {
             case "Cylinder" :
                 foreach (Ishape shape in shapes) {
                     if(shape is Cylinder) {
-                        Console.WriteLine(mainQuestion);
+                        Console.WriteLine(value: mainQuestion);
                         mainAnswer = Console.ReadLine();
 
                         switch (mainAnswer) {
@@ -126,7 +125,7 @@ namespace Csharp_Interfaces {
                                 break;
 
                             default :
-                                Console.Write("Err: N/A");
+                                Console.Write(value: "Err: N/A");
                                 break;
                         }
                     }
@@ -137,7 +136,7 @@ namespace Csharp_Interfaces {
             case "Circle" :
                 foreach (Ishape shape in shapes) {
                     if(shape is Circle) {
-                        Console.WriteLine(mainQuestion);
+                        Console.WriteLine(value: mainQuestion);
                         mainAnswer = Console.ReadLine();
 
                         switch (mainAnswer) {
@@ -155,7 +154,7 @@ namespace Csharp_Interfaces {
                                 break;
 
                             default :
-                                Console.Write("Err: N/A");
+                                Console.Write(value: "Err: N/A");
                                 break;
                         }
                     }
@@ -164,7 +163,7 @@ namespace Csharp_Interfaces {
                 break;
 
             default :
-                Console.WriteLine("Not a viable shape.");
+                Console.WriteLine(value: "Not a viable shape.");
                 break;
             }
         }
